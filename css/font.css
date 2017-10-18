@@ -1,0 +1,105 @@
+@font-face {
+    font-family: 'icomoon';
+    src:    url('../fonts/icomoon.eot?2ijaoc');
+    src:    url('../fonts/icomoon.eot?2ijaoc#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?2ijaoc') format('truetype'),
+        url('../fonts/icomoon.woff?2ijaoc') format('woff'),
+        url('../fonts/icomoon.svg?2ijaoc#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-active4:before {
+    content: "\e902";
+}
+.icon-browser109:before {
+    content: "\e903";
+}
+.icon-cloud118:before {
+    content: "\e904";
+}
+.icon-clouds64:before {
+    content: "\e905";
+}
+.icon-computerscreen1:before {
+    content: "\e906";
+}
+.icon-dart13:before {
+    content: "\e907";
+}
+.icon-earphones54:before {
+    content: "\e908";
+}
+.icon-email19:before {
+    content: "\e909";
+}
+.icon-hosting:before {
+    content: "\e90a";
+}
+.icon-magnifyingglass90:before {
+    content: "\e90b";
+}
+.icon-origami28:before {
+    content: "\e90c";
+}
+.icon-paintbrush10:before {
+    content: "\e90d";
+}
+.icon-rack1:before {
+    content: "\e90e";
+}
+.icon-responsive2:before {
+    content: "\e90f";
+}
+.icon-screen54:before {
+    content: "\e910";
+}
+.icon-share11:before {
+    content: "\e911";
+}
+.icon-smartphone86:before {
+    content: "\e912";
+}
+.icon-socialnetwork103:before {
+    content: "\e913";
+}
+.icon-telephone60:before {
+    content: "\e914";
+}
+.icon-touchscreen6:before {
+    content: "\e915";
+}
+.icon-website8:before {
+    content: "\e916";
+}
+.icon-pencil2:before {
+    content: "\e917";
+}
+.icon-quill:before {
+    content: "\e918";
+}
+.icon-display:before {
+    content: "\e901";
+}
+.icon-mobile2:before {
+    content: "\e919";
+}
+.icon-target:before {
+    content: "\e900";
+}
+
