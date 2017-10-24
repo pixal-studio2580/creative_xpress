@@ -12,7 +12,12 @@
         <link href="css/common.css" rel="stylesheet">
         <link href="css/utilities.css" rel="stylesheet">
         <link href="css/responsive.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700" rel="stylesheet">
+
+        <!-- <link rel="stylesheet" href="css/docs.theme.min.css"> -->
+        <link rel="stylesheet" href="css/owl.carousel.min.css">
+        <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+       
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
         <link rel="icon" type="image/png" sizes="16x16" href="images/fav-icon.png">
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -32,7 +37,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-md-auto d-md-flex">
         <li class="nav-item active"><a class="nav-link" href="#service">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about_us">About Us</a></li>
         <li class="nav-item"><a class="nav-link" href="#">D</a></li>
       </ul>
     </div>
@@ -47,7 +52,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-md-auto d-md-flex">
         <li class="nav-item active"><a class="nav-link" href="#service">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about_us">About Us</a></li>
         <li class="nav-item"><a class="nav-link" href="#">D</a></li>
       </ul>
     </div>
@@ -112,7 +117,7 @@
 </section> <!-- Slider Section End -->
 
 <section id="service" class="main-section">
-  <h3 class="section-heading">What we offer</h3>
+  <h3 class="section-heading text-center">What we offer</h3>
     <div class="container">
       <div class="float-left mt_40 mb_40"><!-- Upper Row Element -->
         <div class="col-md-4 col-xs-12 float-left">
@@ -170,26 +175,77 @@
 </section>
 
 <section id="about_us" class="main-section">
-  <h3 class="section-heading">About Us</h3>  
-  <div class="container">
-    <div class="col-md-12 no-padding">
-      <p class="">We based at Bhubaneswar, Orissa it was started in 2007 as part time for income intially we provides man power in all over odisha with excellent services related to event management and gradually we went into road shows and promotions. In 2011 we starts with events and we did excellent we have been showing our perfection in organizing events like conferences, seminars, branding, promotion, road shows, birthday party, weeding, party planning services and many more.</p>
-    </div>
-    <div class="col-xs-12 col-md-2 no-padding">
-      <button class="btn read_more">Read More</button>
-    </div>
-
-  </div>
   
+  <div class="container">
+    <div class="col-md-7 no-padding">
+      <div class="about_us_container">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+              <div class="col-md-12">
+                <h2 class="section-heading">About us</h2>
+                <p class="">We based at Bhubaneswar, Orissa it was started in 2007 as part time for income intially we provides man power in all over odisha with excellent services related to event management and gradually we went into road shows and promotions. In 2011 we starts with events and we did excellent we have been showing our perfection in organizing events like conferences, seminars, branding, promotion, road shows, birthday party, weeding, party planning services and many more.</p>
+              <div class="col-md-3 no-padding"><button class="btn read_more">Read More</button></div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="col-md-12">
+                <h2 class="section-heading">Who we are!</h2>
+                <p class="">We based at Bhubaneswar, Orissa it was started in 2007 as part time for income intially we provides man power in all over odisha with excellent services related to event management and gradually we went into road shows and promotions. In 2011 we starts with events and we did excellent we have been showing our perfection in organizing events like conferences, seminars, branding, promotion, road shows, birthday party, weeding, party planning services and many more. We are very flexible at our dealings and hence provide customized solutions to clients according to their requirements and plan the event accordingly.</p>
+              <div class="col-md-3 no-padding"><button class="btn read_more">Read More</button></div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="col-md-12">
+                <h2 class="section-heading">What we do?</h2>
+                <p class="">Our team brings over 9 combined years of experience in different individual field like Production, Marketing, Creativity, Budgeting, Organizing, Staffing etc. We have highly professional team of dedicated employees who deliberately work towards providing quick and speedy solutions to the clients. We have been working with several organizations having different sizes and from varied Industries with different objectives</p>
+              <div class="col-md-3 no-padding"><button class="btn read_more">Read More</button></div>
+              </div>
+            </div>
+        </div>
+
+
+        
+      </div>
+    </div>  
+
+  </div> <!-- Container End -->
 </section>
 
 
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="js/owl.carousel.js"></script>
+        <script>
+          $(document).ready(function() {
+              var owl = $('.owl-carousel');
+              owl.owlCarousel({
+                margin: 30,
+                nav: true,
+                loop: true,
+                //default settings:
+                autoplay:true,
+                autoplayTimeout:5000,
+                autoplayHoverPause:false,
+                responsive: {
+                  0: {
+                    items: 1
+                  },
+                  600: {
+                    items: 1
+                  },
+                  1000: {
+                    items: 1
+                  }
+                }
+              })
+            })
+        </script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
         <script src="js/bootstrap.js"></script>
         <script src="js/home.js"></script>
+        
         <script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
+        
         
 </body>
 </html>

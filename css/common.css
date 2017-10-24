@@ -1,21 +1,22 @@
-
+.db{
+    display: block !important;
+}
 
 .section-heading{
 	margin-top: 20px;
     margin-bottom: 20px;
-    font-size: 46px;
-    text-align: center;
+    font-size: 36px;
     font-weight: 700;
 }
 .grid-title{
-    font-size: 28px;
+    font-size: 20px;
     text-align: center;
     margin-bottom: 0;
     margin-top: 10px;
     font-weight: 700;
 }
 .grid-desc{
-    font-size: 18px;
+    font-size: 14px;
     text-align: center;
     margin-bottom: 0;
     margin-top: 10px;
