@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<body>
+  <head>
+<style media="screen">
+.imageOutput{
+  margin-top: 2em;
+  margin-right: 5%;
+  border: solid #19aebb 2px;
+  border-radius: 20px;
+  position: relative;
+  right: 1em;
+  width:190px;
+  height: 150px;
+}
+
+.uploaded_image{
+  margin-top: 2em;
+  margin-right: 3%;
+  border: solid #19aebb 3px;
+  border-style: dotted;
+  border-radius: 20px;
+  position: relative;
+  right: 1em;
+  width:170px !important;
+  height: 150px;
+  padding: 0em !important;
+
+}
+.imageUpload{
+  padding: 3.2em !important;
+  margin-top: 2em !important;
+  padding-top: 0.5em !important;
+}
+.ImageOnPreview{
+
+  border-radius: 18px;
+  width:171px !important;
+  height: 150px;
+  padding: 0em !important;
+  margin: 0em !important;
+
+
+
+}
+#imageUploadSection{
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.photoText{
+      margin-top: -2em !important;
+}
+.fileUpload{visibility: hidden;}
+.demo{position: relative;}
+.demo:after{
+  content: "";
+  position: absolute;
+      width: 100%;
+    height: 100%;
+    bottom: 0;
+    z-index: -9999;
+    background: url('https://assets.servedby-buysellads.com/p/manage/asset/id/28536');
+}
+</style>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<h1>File Upload</h1>
+
+        <input type="file" accept="image/*" onchange="loadFile(event)"  multiple id="my_file" class="fileUpload">
+
+    <div class="row">
+      <div class="col s11 center" id="imageUploadSection">
+        <!-- <div class="col s3 imageOutput" >
+
+        </div> -->
+
+        <div class="uploaded_image col s11  m10 l3 demo">
+
+         <img  src="https://cdn2.iconfinder.com/data/icons/picol-vector/32/image_add-64.png" id="output1" class="col s12 imageUpload" >
+
+          <span class="col s12 photoText" id="photoText1" ></span>
+        </div>
+        <div class="uploaded_image col s11  m10 l3 ">
+         <img  src="https://cdn2.iconfinder.com/data/icons/picol-vector/32/image_add-64.png" id="output2" class="col s12 imageUpload" >
+          <span class="col s12 photoText" id="photoText2"></span>
+        </div>
+        <div class="uploaded_image col s11  m10 l3 ">
+         <img  src="https://cdn2.iconfinder.com/data/icons/picol-vector/32/image_add-64.png" id="output3" class="col s12 imageUpload" >
+          <span class="col s12 photoText" id="photoText3">Hello</span>
+        </div>
+
+</body>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+<script type="text/javascript">
+// <input type="file" accept="image/*" onchange="loadFile(event)">
+// <img id="output"/>
+  var imageNumber=0;
+  var idOfClicked;
+  var textid;
+  var loadFile = function(event) {
+        imageNumber++;
+        
+            var imageId=idOfClicked;
+            var output = document.getElementById(imageId);
+            output.src = URL.createObjectURL(event.target.files[0]);           
+            $("#"+imageId).addClass( "ImageOnPreview" );
+            $("#"+imageId).delay(200).show();
+  };
+
+  function htmlToElement(html) {
+    var template = document.createElement('template');
+    template.innerHTML = html;
+    return template.content.firstChild;
+}
+
+  $(document).ready(function() {
+    $("#output1").click(function() {
+      $("input[id='my_file']").click();
+      // loadFile(event);
+      idOfClicked="output1";
+      textid="photoText1"
+    });
+    $("#output2").click(function() {
+      $("input[id='my_file']").click();
+      // loadFile(event);
+        idOfClicked="output2";
+        textid="photoText2"
+    });
+    $("#output3").click(function() {
+      $("input[id='my_file']").click();
+      // loadFile(event);
+        idOfClicked="output3";
+        textid="photoText3"
+    });
+
+  });
+
+</script>
+
+</body>
+</html>
